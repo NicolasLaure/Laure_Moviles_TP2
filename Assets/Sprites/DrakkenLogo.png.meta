@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: b4d01df0cc9719045bc25793b9515462
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DrakkenLogo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f91f95b9dd97b4e9fe9f6da7356539
+      internalID: 1870911707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44aa5c0c6c99ed44e8d97162ea81d06b
+      internalID: -1266561862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f1606be4346c448ab104425f1b5a74
+      internalID: -1137029301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c9ca45f62716642b1f729eb06ff65b
+      internalID: -913855153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26e0e6c4d8220c47a85dda6c016854b
+      internalID: -1818739361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efb0f487d3da9349af79375189d2066
+      internalID: -646978242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8262c7f3a0214b145b1bc133848b68cf
+      internalID: -2062997136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7400fe1aa440140a0e5364626a5bea
+      internalID: -1284517384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_8
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b283487e00dff0d44b908a01a3c5f430
+      internalID: -1415579698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_9
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd601d93bd191c74da819d44361a03d1
+      internalID: 1241530722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368aeefc7754a13469bcef284bb6a61f
+      internalID: -373767099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f34daf81635a448b640cf47c229f5c
+      internalID: -1212867030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41add65df629e3e49ad8eac883b0c5c7
+      internalID: -179002617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_13
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db79d38ac6cad8f428d96f3957f9fbd6
+      internalID: 30813649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af2f1f39e7a60d4a8ccb1cc7395a202
+      internalID: 456568691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_15
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab9bb08ecd7d914eafd643c8116cf23
+      internalID: -1690986700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_16
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0730ca303060e434da2da797315f16e7
+      internalID: -47023477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_17
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2359e591390d24888d8263def9ce50
+      internalID: 1102737835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_18
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1638695d8613f44692eb9499f29c7cc
+      internalID: -946313264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_19
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800fc848ec71f804ab94dc256fa36a6c
+      internalID: -610513632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe2caf89be21644392a105bea897404
+      internalID: 643365274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a784af90a42f5104d9191fb2317405c9
+      internalID: 2080389277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_22
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da05a81e456fd14bab7e2d7bf47df49
+      internalID: 370243080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14472ce4df69abf4b94b35ee28337a4e
+      internalID: 1552550274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_24
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc8d4c28e2ce0b4792a8f0aa29aaeba
+      internalID: 1696991784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_25
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1c171697b7374479fc516060dfb6ea
+      internalID: -1090192989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72de638f9b2e4334f8ac0279dbc69ffb
+      internalID: 754791388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_27
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2511ac98ba0a2f540975b94d4280e8c2
+      internalID: -29679902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_28
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e095ccaf178d2e4fa87204383060aef
+      internalID: 1027496349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_29
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42d07e19019ae846b0297669e4c5a03
+      internalID: 1976079024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051a3394f96992b41885a519b5dd25a1
+      internalID: -736701230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_31
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ce13deaf3b3a543aeb726fbb5b243b
+      internalID: -1652884257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_32
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab219ad251b89f4494d0036e188d3d2
+      internalID: -14820884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_33
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdeadc531e39c246b75a03730c12f4c
+      internalID: 380866287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_34
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f653970f9aaf5114fa44bdeed7bee7f4
+      internalID: 855430696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_35
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8877b1c9fbe51af4496d0b06fa96e422
+      internalID: 459200947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_36
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3461ee45f6b3e944891be0a12f74fad9
+      internalID: 135379655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_37
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0434c7c4b7c2049ab15d7491d84074
+      internalID: -1759620381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_38
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0153bae20e7095c4a88440f0e5a28a0c
+      internalID: 1642723602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_39
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1000
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bfad1a9805d354d81fa484c061bcba
+      internalID: 500580537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4de47447240a384eaa8a83132b75ef5
+      internalID: 438782122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_41
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99df0b7a59c0114aaddf4dc7ea8c652
+      internalID: 1404070413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_42
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381a424fa0189254cacb6d885773ba54
+      internalID: -351055593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_43
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b11c232398115a489bfdb95a667baa7
+      internalID: 802665176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_44
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49715ed9a11acf24ca8d0d32e003d1b5
+      internalID: -753956794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_45
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b8d40f2159cd44ca61b081544a5674
+      internalID: 1084192130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_46
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a68255ce83909439697f1f33e340df
+      internalID: 1525344439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_47
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fddf3e557b3c754698b8fa475b69e11
+      internalID: 616917824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_48
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c59f26c5a4032419548084da44282d
+      internalID: 1340286994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_49
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 500
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cda6486731981141aedaed2a63cc09e
+      internalID: -1579216134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50a4275ba3514244a572ea587dc9e5f
+      internalID: 1335838239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_51
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f624b03a0f3334d85ec3a07371cded
+      internalID: 542802430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_52
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164eb54cd28efde489f23bcca7661046
+      internalID: 1253005880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_53
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be74c5f681708cf478b1a3c9a1ac298d
+      internalID: 43088482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_54
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68b394fbb18b0c4b89ff0d47492514f
+      internalID: -1951022735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_55
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d4a7ae8a7d42e40ad7d475afb2338b
+      internalID: -528892205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_56
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b51ea25ff4087488c2ee47a253bcff
+      internalID: 1557954256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_57
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc33f7a7762ac7a49a1815d1d61ef7fe
+      internalID: -1622403841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_58
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095cba2cb30d73d45b2b84d9753d8589
+      internalID: 1678986089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrakkenLogo_59
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 0
+        width: 496
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9395828bd424c5843886ea7817f78069
+      internalID: 464501379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DrakkenLogo_0: 1870911707
+      DrakkenLogo_1: -1266561862
+      DrakkenLogo_10: -373767099
+      DrakkenLogo_11: -1212867030
+      DrakkenLogo_12: -179002617
+      DrakkenLogo_13: 30813649
+      DrakkenLogo_14: 456568691
+      DrakkenLogo_15: -1690986700
+      DrakkenLogo_16: -47023477
+      DrakkenLogo_17: 1102737835
+      DrakkenLogo_18: -946313264
+      DrakkenLogo_19: -610513632
+      DrakkenLogo_2: -1137029301
+      DrakkenLogo_20: 643365274
+      DrakkenLogo_21: 2080389277
+      DrakkenLogo_22: 370243080
+      DrakkenLogo_23: 1552550274
+      DrakkenLogo_24: 1696991784
+      DrakkenLogo_25: -1090192989
+      DrakkenLogo_26: 754791388
+      DrakkenLogo_27: -29679902
+      DrakkenLogo_28: 1027496349
+      DrakkenLogo_29: 1976079024
+      DrakkenLogo_3: -913855153
+      DrakkenLogo_30: -736701230
+      DrakkenLogo_31: -1652884257
+      DrakkenLogo_32: -14820884
+      DrakkenLogo_33: 380866287
+      DrakkenLogo_34: 855430696
+      DrakkenLogo_35: 459200947
+      DrakkenLogo_36: 135379655
+      DrakkenLogo_37: -1759620381
+      DrakkenLogo_38: 1642723602
+      DrakkenLogo_39: 500580537
+      DrakkenLogo_4: -1818739361
+      DrakkenLogo_40: 438782122
+      DrakkenLogo_41: 1404070413
+      DrakkenLogo_42: -351055593
+      DrakkenLogo_43: 802665176
+      DrakkenLogo_44: -753956794
+      DrakkenLogo_45: 1084192130
+      DrakkenLogo_46: 1525344439
+      DrakkenLogo_47: 616917824
+      DrakkenLogo_48: 1340286994
+      DrakkenLogo_49: -1579216134
+      DrakkenLogo_5: -646978242
+      DrakkenLogo_50: 1335838239
+      DrakkenLogo_51: 542802430
+      DrakkenLogo_52: 1253005880
+      DrakkenLogo_53: 43088482
+      DrakkenLogo_54: -1951022735
+      DrakkenLogo_55: -528892205
+      DrakkenLogo_56: 1557954256
+      DrakkenLogo_57: -1622403841
+      DrakkenLogo_58: 1678986089
+      DrakkenLogo_59: 464501379
+      DrakkenLogo_6: -2062997136
+      DrakkenLogo_7: -1284517384
+      DrakkenLogo_8: -1415579698
+      DrakkenLogo_9: 1241530722
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
