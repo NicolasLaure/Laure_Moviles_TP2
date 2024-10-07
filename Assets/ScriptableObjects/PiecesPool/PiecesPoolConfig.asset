@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21b8b8f3fc08414c8071e6a338e8fcf, type: 3}
+  m_Name: PiecesPoolConfig
+  m_EditorClassIdentifier: 
+  poolObjects:
+  - {fileID: 11400000, guid: 5af180a24ddffa240acc925309ef26c1, type: 2}
+  - {fileID: 11400000, guid: fdc9fc15ab6d875499f8ecdbbb4932b2, type: 2}
+  - {fileID: 11400000, guid: b4847601246ed7c45a78a49e28ec163e, type: 2}
+  - {fileID: 11400000, guid: 0a17cd38376ec7f4ca358f9a35132b8e, type: 2}
+  - {fileID: 11400000, guid: 65e9dcaa196a3644aa7428ac7370d091, type: 2}
+  - {fileID: 11400000, guid: c61ea0643ed576a4594fef58ca21dd19, type: 2}
+  - {fileID: 11400000, guid: e37ea4499633e804b868f651876d6448, type: 2}
+  objectCount: 50
