@@ -29,11 +29,12 @@ public class InputReader : MonoBehaviour
 
     public void HandleTouch(InputAction.CallbackContext context)
     {
-            onTouch?.RaiseEvent(context.ReadValue<Vector2>());
+        onTouch?.RaiseEvent(context.ReadValue<Vector2>());
     }
 
     public void HandleRelease(InputAction.CallbackContext context)
     {
         onRelease?.RaiseEvent();
+        onMove?.RaiseEvent(Vector3.zero);
     }
 }
