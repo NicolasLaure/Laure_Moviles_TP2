@@ -1,0 +1,46 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem.OnScreen;
+using UnityEngine.Serialization;
+
+public class DynamicJoystickController : MonoBehaviour
+{
+    [SerializeField] private Vector3EventChannelSO onTouchChannel;
+    [SerializeField] private VoidEventChannelSO onReleaseChannel;
+
+    [SerializeField] private RectTransform canvasRect;
+
+    [SerializeField] private RectTransform joystick;
+
+    private void Awake()
+    {
+        onTouchChannel.onVector3Event += HandleTouch;
+        onReleaseChannel.onVoidEvent += HandleRelease;
+        gameObject.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        onTouchChannel.onVector3Event -= HandleTouch;
+        onReleaseChannel.onVoidEvent -= HandleRelease;
+    }
+
+    private void HandleTouch(Vector3 pos)
+    {
+        gameObject.SetActive(true);
+        RectTransform rectTransform = GetComponent<RectTransform>();
+
+        Debug.Log(pos);
+        Vector2 screenPosition = new Vector2(pos.x - canvasRect.sizeDelta.x * 0.5f, pos.y - canvasRect.sizeDelta.y * 0.5f);
+
+        rectTransform.localPosition = screenPosition;
+    }
+
+    private void HandleRelease()
+    {
+        gameObject.SetActive(false);
+        joystick.localPosition = Vector3.zero;
+    }
+}
