@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 229647132736827693}
   - component: {fileID: 4133192039643700093}
   - component: {fileID: 1354327156506115186}
+  - component: {fileID: -1619954457434141878}
   m_Layer: 0
   m_Name: J_Shape
   m_TagString: Untagged
@@ -269,7 +270,7 @@ Rigidbody2D:
   m_Mass: 2.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 23239b0d064062345a474b23e9698c0e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -281,3 +282,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-1619954457434141878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8033747337636003233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d1a0aee0c73304a8bd4864e8dac4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPlayerPositionChanged: {fileID: 11400000, guid: e451064f6213abe41bbf5009d4f0f986, type: 2}
+  onPieceLanded: {fileID: 11400000, guid: 5a27e5e2940d8a84d8c6b4872a626185, type: 2}
+  config: {fileID: 11400000, guid: a347d41731b24ca4f9a64f4ea0324167, type: 2}

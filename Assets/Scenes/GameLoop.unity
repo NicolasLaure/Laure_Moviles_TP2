@@ -1656,8 +1656,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMoveChannel: {fileID: 11400000, guid: a9364b96a8f4a794e8fbfe713a4e6da1, type: 2}
+  onPlayerPositionChanged: {fileID: 11400000, guid: e451064f6213abe41bbf5009d4f0f986, type: 2}
+  onPieceLanded: {fileID: 11400000, guid: 5a27e5e2940d8a84d8c6b4872a626185, type: 2}
   speed: 5
   minMaxHorizontalBounds: {x: -2.8, y: 2.8}
+  pool: {fileID: 2053661893}
 --- !u!1 &1653053023
 GameObject:
   m_ObjectHideFlags: 0
