@@ -1062,7 +1062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.30210304, y: 0.16535679}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -170, y: 540}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &836247224
@@ -1660,7 +1660,6 @@ MonoBehaviour:
   onPieceLanded: {fileID: 11400000, guid: 5a27e5e2940d8a84d8c6b4872a626185, type: 2}
   speed: 5
   minMaxHorizontalBounds: {x: -2.8, y: 2.8}
-  pool: {fileID: 2053661893}
 --- !u!1 &1653053023
 GameObject:
   m_ObjectHideFlags: 0

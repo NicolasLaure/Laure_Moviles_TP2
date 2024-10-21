@@ -32,8 +32,9 @@ public class DynamicJoystickController : MonoBehaviour
         gameObject.SetActive(true);
         RectTransform rectTransform = GetComponent<RectTransform>();
 
+        Vector2 normalizedPos = new Vector2(pos.x / canvasRect.localScale.x, pos.y / canvasRect.localScale.y);
         Debug.Log(pos);
-        Vector2 screenPosition = new Vector2(pos.x - canvasRect.sizeDelta.x * 0.5f, pos.y - canvasRect.sizeDelta.y * 0.5f);
+        Vector2 screenPosition = new Vector2(normalizedPos.x - canvasRect.sizeDelta.x * 0.5f, normalizedPos.y - canvasRect.sizeDelta.y * 0.5f);
 
         rectTransform.localPosition = screenPosition;
     }
