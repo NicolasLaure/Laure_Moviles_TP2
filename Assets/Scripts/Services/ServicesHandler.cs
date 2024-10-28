@@ -9,7 +9,8 @@ public class ServicesHandler : MonoBehaviour
 #if UNITY_ANDROID
     public void Start()
     {
-        PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+        if (Loader.currentSceneIndex != 1)
+            PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
     }
 
     internal void ProcessAuthentication(SignInStatus status)
@@ -17,13 +18,18 @@ public class ServicesHandler : MonoBehaviour
         if (status == SignInStatus.Success)
         {
             // Continue with Play Games Services
+            Loader.ChangeScene(2);
         }
         else
         {
-            // Disable your integration with Play Games Services or show a login button
-            // to ask users to sign-in. Clicking it should call
-            // PlayGamesPlatform.Instance.ManuallyAuthenticate(ProcessAuthentication).
+            if (Loader.currentSceneIndex != 1)
+                Loader.ChangeScene(1);
         }
+    }
+
+    public void ManualLog()
+    {
+        PlayGamesPlatform.Instance.ManuallyAuthenticate(ProcessAuthentication);
     }
 #endif
 }

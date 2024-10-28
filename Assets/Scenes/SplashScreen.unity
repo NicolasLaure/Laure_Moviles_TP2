@@ -610,7 +610,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1910244468
+--- !u!1 &1471875002
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -618,21 +618,34 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1910244470}
+  - component: {fileID: 1471875004}
+  - component: {fileID: 1471875003}
   m_Layer: 0
-  m_Name: Boot
+  m_Name: Services Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1910244470
+--- !u!114 &1471875003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471875002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a5d26420d8ee441b706d4217fcd06c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1471875004
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910244468}
+  m_GameObject: {fileID: 1471875002}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -648,4 +661,4 @@ SceneRoots:
   - {fileID: 795232039}
   - {fileID: 141332152}
   - {fileID: 564696682}
-  - {fileID: 1910244470}
+  - {fileID: 1471875004}

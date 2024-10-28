@@ -2335,7 +2335,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 975474414}
         m_TargetAssemblyTypeName: LoggerManager, Assembly-CSharp
-        m_MethodName: SendLog
+        m_MethodName: SendTimeLog
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

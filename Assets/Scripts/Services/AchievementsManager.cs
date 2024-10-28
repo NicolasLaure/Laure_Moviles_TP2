@@ -2,7 +2,6 @@ using UnityEngine;
 #if UNITY_ANDROID
 using GooglePlayGames;
 #endif
-using UnityEngine.SocialPlatforms;
 
 public enum Achievements
 {
@@ -11,10 +10,10 @@ public enum Achievements
 
 public class AchievementsManager : MonoBehaviour
 {
-    public static void UnlockAchievement(AchievementSO achievements)
+    public static void UnlockAchievement(AchievementSO achievement)
     {
 #if UNITY_ANDROID
-        Social.ReportProgress(achievements.playStoreId, 100.0f, (bool success) => { });
+        PlayGamesPlatform.Instance.ReportProgress(achievement.playStoreId, 100.0f, (bool success) => { });
 #endif
     }
 }

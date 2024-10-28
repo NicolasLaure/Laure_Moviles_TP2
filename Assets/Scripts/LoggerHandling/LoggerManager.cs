@@ -27,12 +27,22 @@ public class LoggerManager : MonoBehaviour
 #endif
     }
 
-    [ContextMenu("SendLog")]
-    public void SendLog()
+    [ContextMenu("SendTimeLog")]
+    public void SendTimeLog()
+    {
+        Debug.Log("Unity - SendTimeLog");
+#if UNITY_ANDROID || UNITY_EDITOR
+        pluginInstance.Call("SendLog", Time.time.ToString());
+#endif
+        UpdateLogs();
+        SaveLogs();
+    }
+
+    public void SendLog(string text)
     {
         Debug.Log("Unity - SendLog");
 #if UNITY_ANDROID || UNITY_EDITOR
-        pluginInstance.Call("SendLog", Time.time.ToString());
+        pluginInstance.Call("SendLog", text);
 #endif
         UpdateLogs();
         SaveLogs();
