@@ -147,7 +147,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""addc509f-3ec8-4bad-8bbd-ccbaf6282ecc"",
-                    ""path"": ""<Touchscreen>/touch1/press"",
+                    ""path"": ""<Touchscreen>/primaryTouch/press"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

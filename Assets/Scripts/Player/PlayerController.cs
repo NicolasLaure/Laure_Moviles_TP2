@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Vector3EventChannelSO onMoveChannel;
     [SerializeField] private Vector3EventChannelSO onPlayerPositionChanged;
+    [SerializeField] private VoidEventChannelSO onRelease;
     [SerializeField] private VoidEventChannelSO onPieceLanded;
     [SerializeField] private float speed;
     [SerializeField] private Vector2 minMaxHorizontalBounds;
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         onMoveChannel.onVector3Event += HandleMove;
         onPieceLanded.onVoidEvent += SpawnNextPiece;
+        onRelease.onVoidEvent += HandleRelease;
         SpawnNextPiece();
     }
 
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         onMoveChannel.onVector3Event -= HandleMove;
         onPieceLanded.onVoidEvent -= SpawnNextPiece;
+        onRelease.onVoidEvent -= HandleRelease;
     }
 
     // Update is called once per frame
@@ -44,6 +47,12 @@ public class PlayerController : MonoBehaviour
     private void HandleMove(Vector3 inputDir)
     {
         _dir = inputDir;
+        horizontalDisplacement = _dir.x;
+    }
+
+    private void HandleRelease()
+    {
+        _dir = Vector3.zero;
         horizontalDisplacement = _dir.x;
     }
 

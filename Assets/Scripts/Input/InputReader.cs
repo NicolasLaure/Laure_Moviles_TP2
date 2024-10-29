@@ -35,6 +35,5 @@ public class InputReader : MonoBehaviour
     public void HandleRelease(InputAction.CallbackContext context)
     {
         onRelease?.RaiseEvent();
-        onMove?.RaiseEvent(Vector3.zero);
     }
 }

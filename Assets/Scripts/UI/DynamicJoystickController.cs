@@ -14,7 +14,7 @@ public class DynamicJoystickController : MonoBehaviour
 
     [SerializeField] private RectTransform joystick;
 
-    private void Awake()
+    private void Start()
     {
         onTouchChannel.onVector3Event += HandleTouch;
         onReleaseChannel.onVoidEvent += HandleRelease;

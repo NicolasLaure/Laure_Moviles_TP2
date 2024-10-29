@@ -9,27 +9,14 @@ public class ServicesHandler : MonoBehaviour
 #if UNITY_ANDROID
     public void Start()
     {
-        if (Loader.currentSceneIndex != 1)
-            PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+        PlayGamesPlatform.Activate();
+        Social.localUser.Authenticate(ProcessAuthentication);
     }
 
-    internal void ProcessAuthentication(SignInStatus status)
+    internal void ProcessAuthentication(bool succeded)
     {
-        if (status == SignInStatus.Success)
-        {
-            // Continue with Play Games Services
-            Loader.ChangeScene(2);
-        }
-        else
-        {
-            if (Loader.currentSceneIndex != 1)
-                Loader.ChangeScene(1);
-        }
-    }
-
-    public void ManualLog()
-    {
-        PlayGamesPlatform.Instance.ManuallyAuthenticate(ProcessAuthentication);
+        
+        Loader.ChangeScene(Loader.currentSceneIndex + 1);
     }
 #endif
 }
