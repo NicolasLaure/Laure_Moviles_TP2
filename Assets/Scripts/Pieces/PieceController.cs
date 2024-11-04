@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 public class PieceController : MonoBehaviour
 {
     [SerializeField] private Vector3EventChannelSO onPlayerPositionChanged;
-    [SerializeField] private VoidEventChannelSO onPieceLanded;
+    [SerializeField] private Vector3EventChannelSO onPieceLanded;
     [SerializeField] private PieceConfigSO config;
     private bool _isFalling;
     private Rigidbody2D rb;
@@ -44,7 +44,7 @@ public class PieceController : MonoBehaviour
         if (_isFalling)
         {
             enabled = false;
-            onPieceLanded?.RaiseEvent();
+            onPieceLanded?.RaiseEvent(transform.position);
         }
     }
 }
