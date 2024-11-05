@@ -48,6 +48,14 @@ public class LoggerManager : MonoBehaviour
         SaveLogs();
     }
 
+    public void ReadLogsFromFile()
+    {
+        Debug.Log("Unity - SendLog");
+#if UNITY_ANDROID || UNITY_EDITOR
+        label.text = pluginInstance.Call<string>("ReadFromFile");
+#endif
+    }
+
     [ContextMenu("UpdateLog")]
     public void UpdateLogs()
     {
