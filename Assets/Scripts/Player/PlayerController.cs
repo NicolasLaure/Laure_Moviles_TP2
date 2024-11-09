@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private float _horizontalDisplacement;
     private Coroutine _spawnCoroutine;
+    private GameObject _currentPiece;
 
     void Start()
     {
@@ -63,6 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             piece.transform.position = transform.position;
             piece.GetComponent<PieceController>().enabled = true;
+            _currentPiece = piece;
         }
     }
 
@@ -76,5 +78,21 @@ public class PlayerController : MonoBehaviour
         if (_spawnCoroutine != null)
             StopCoroutine(_spawnCoroutine);
         _spawnCoroutine = StartCoroutine(SpawnPieceCoroutine());
+    }
+
+    public void RotateCurrentPieceLeft()
+    {
+        if (_currentPiece == null)
+            return;
+
+        _currentPiece.transform.rotation *= Quaternion.Euler(0, 0, -90);
+    }
+    
+    public void RotateCurrentPieceRight()
+    {
+        if (_currentPiece == null)
+            return;
+
+        _currentPiece.transform.rotation *= Quaternion.Euler(0, 0, 90);
     }
 }

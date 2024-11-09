@@ -13,6 +13,7 @@ public class PieceController : MonoBehaviour
     private Rigidbody2D rb;
 
     public bool IsFalling => _isFalling;
+
     private void OnEnable()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,6 +45,7 @@ public class PieceController : MonoBehaviour
     {
         if (_isFalling)
         {
+            enabled = false;
             _isFalling = false;
             onPieceLanded?.RaiseEvent();
         }
