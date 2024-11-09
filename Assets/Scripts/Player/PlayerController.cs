@@ -8,11 +8,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3EventChannelSO onMoveChannel;
     [SerializeField] private Vector3EventChannelSO onPlayerPositionChanged;
     [SerializeField] private VoidEventChannelSO onRelease;
-    [SerializeField] private Vector3EventChannelSO onPieceLanded;
+    [SerializeField] private VoidEventChannelSO onPieceLanded;
     [SerializeField] private float speed;
     [SerializeField] private Vector2 minMaxHorizontalBounds;
     [SerializeField] private float verticalOffset;
-    [SerializeField] private float highestPoint;
 
     private Vector2 _dir;
 
@@ -22,7 +21,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         onMoveChannel.onVector3Event += HandleMove;
-        onPieceLanded.onVector3Event += HandlePieceLanded;
+        onPieceLanded.onVoidEvent += HandlePieceLanded;
         onRelease.onVoidEvent += HandleRelease;
         SpawnNextPiece();
     }
@@ -30,7 +29,7 @@ public class PlayerController : MonoBehaviour
     private void OnDestroy()
     {
         onMoveChannel.onVector3Event -= HandleMove;
-        onPieceLanded.onVector3Event -= HandlePieceLanded;
+        onPieceLanded.onVoidEvent -= HandlePieceLanded;
         onRelease.onVoidEvent -= HandleRelease;
     }
 
@@ -67,15 +66,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void HandlePieceLanded(Vector3 piecePos)
+    private void HandlePieceLanded()
     {
-        if (piecePos.y > highestPoint)
-        {
-            highestPoint = piecePos.y + verticalOffset;
-            Vector3 targetPosition = new Vector3(Camera.main.transform.position.x, highestPoint, Camera.main.transform.position.z);
-            Camera.main.transform.position = targetPosition;
-        }
-
         SpawnNextPiece();
     }
 

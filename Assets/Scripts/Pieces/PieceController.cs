@@ -7,11 +7,12 @@ using UnityEngine.Serialization;
 public class PieceController : MonoBehaviour
 {
     [SerializeField] private Vector3EventChannelSO onPlayerPositionChanged;
-    [SerializeField] private Vector3EventChannelSO onPieceLanded;
+    [SerializeField] private VoidEventChannelSO onPieceLanded;
     [SerializeField] private PieceConfigSO config;
     private bool _isFalling;
     private Rigidbody2D rb;
 
+    public bool IsFalling => _isFalling;
     private void OnEnable()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,7 +32,7 @@ public class PieceController : MonoBehaviour
     private void Update()
     {
         if (_isFalling)
-            transform.position += Vector3.down * config.speed * Time.deltaTime;
+            transform.position += Vector3.down * (config.speed * Time.deltaTime);
     }
 
     private void HandlePlayerPositionChanged(Vector3 playerPosition)
@@ -43,8 +44,13 @@ public class PieceController : MonoBehaviour
     {
         if (_isFalling)
         {
-            enabled = false;
-            onPieceLanded?.RaiseEvent(transform.position);
+            _isFalling = false;
+            onPieceLanded?.RaiseEvent();
         }
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        _isFalling = true;
     }
 }

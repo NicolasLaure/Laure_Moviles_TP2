@@ -120,8 +120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlayerPositionChanged: {fileID: 11400000, guid: e451064f6213abe41bbf5009d4f0f986, type: 2}
-  onPieceLanded: {fileID: 11400000, guid: 5a27e5e2940d8a84d8c6b4872a626185, type: 2}
+  onPieceLanded: {fileID: 11400000, guid: 5904ffe45e54e894abe4b9f1a50ad2da, type: 2}
+  onFinishLineTouch: {fileID: 11400000, guid: f708565ac267aef44b046a45d8017ec3, type: 2}
   config: {fileID: 11400000, guid: a347d41731b24ca4f9a64f4ea0324167, type: 2}
+  isHighestPiece: 0
 --- !u!1 &3725716416433338583
 GameObject:
   m_ObjectHideFlags: 0
