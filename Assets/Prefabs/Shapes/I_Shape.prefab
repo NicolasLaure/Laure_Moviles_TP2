@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4463438620017836533}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07642388, y: 1.6167556, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -105,7 +105,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 2}
+  m_Size: {x: 0.48, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &-7523360342909138983
 MonoBehaviour:
@@ -121,9 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onPlayerPositionChanged: {fileID: 11400000, guid: e451064f6213abe41bbf5009d4f0f986, type: 2}
   onPieceLanded: {fileID: 11400000, guid: 5904ffe45e54e894abe4b9f1a50ad2da, type: 2}
-  onFinishLineTouch: {fileID: 11400000, guid: f708565ac267aef44b046a45d8017ec3, type: 2}
   config: {fileID: 11400000, guid: a347d41731b24ca4f9a64f4ea0324167, type: 2}
-  isHighestPiece: 0
 --- !u!1 &8625242216929808698
 GameObject:
   m_ObjectHideFlags: 0

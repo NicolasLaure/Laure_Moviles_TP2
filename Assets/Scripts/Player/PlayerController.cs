@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,15 +10,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3EventChannelSO onPlayerPositionChanged;
     [SerializeField] private VoidEventChannelSO onRelease;
     [SerializeField] private VoidEventChannelSO onPieceLanded;
-    [SerializeField] private float speed;
     [SerializeField] private Vector2 minMaxHorizontalBounds;
-    [SerializeField] private float verticalOffset;
-
+    [SerializeField] private float lateralDisplacement;
+    [SerializeField] private float moveCoolDown;
     private Vector2 _dir;
 
-    private float _horizontalDisplacement;
     private Coroutine _spawnCoroutine;
     private GameObject _currentPiece;
+    private Coroutine _moveCoolDownCoroutine;
+    private bool _canMove = true;
 
     void Start()
     {
@@ -34,27 +35,15 @@ public class PlayerController : MonoBehaviour
         onRelease.onVoidEvent -= HandleRelease;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        float newX = Mathf.Clamp(transform.position.x + (_horizontalDisplacement * speed * Time.deltaTime), minMaxHorizontalBounds.x, minMaxHorizontalBounds.y);
-        if (newX != transform.position.x)
-        {
-            transform.position = new Vector3(newX, transform.position.y, 0);
-            onPlayerPositionChanged?.RaiseEvent(transform.position);
-        }
-    }
-
     private void HandleMove(Vector3 inputDir)
     {
         _dir = inputDir;
-        _horizontalDisplacement = _dir.x;
+        Move(_dir.x);
     }
 
     private void HandleRelease()
     {
         _dir = Vector3.zero;
-        _horizontalDisplacement = _dir.x;
     }
 
     private IEnumerator SpawnPieceCoroutine()
@@ -66,6 +55,31 @@ public class PlayerController : MonoBehaviour
             piece.GetComponent<PieceController>().enabled = true;
             _currentPiece = piece;
         }
+    }
+
+    public void Move(float horizontalDir)
+    {
+        if (!_canMove)
+            return;
+
+        float newX = Mathf.Clamp(transform.position.x + (horizontalDir * lateralDisplacement), minMaxHorizontalBounds.x, minMaxHorizontalBounds.y);
+        if (newX != transform.position.x)
+        {
+            transform.position = new Vector3(newX, transform.position.y, 0);
+            onPlayerPositionChanged?.RaiseEvent(transform.position);
+        }
+
+        if (_moveCoolDownCoroutine != null)
+            StopCoroutine(_moveCoolDownCoroutine);
+
+        _moveCoolDownCoroutine = StartCoroutine(HandleMoveCoolDown());
+    }
+
+    private IEnumerator HandleMoveCoolDown()
+    {
+        _canMove = false;
+        yield return new WaitForSeconds(moveCoolDown);
+        _canMove = true;
     }
 
     private void HandlePieceLanded()
@@ -87,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
         _currentPiece.transform.rotation *= Quaternion.Euler(0, 0, -90);
     }
-    
+
     public void RotateCurrentPieceRight()
     {
         if (_currentPiece == null)
