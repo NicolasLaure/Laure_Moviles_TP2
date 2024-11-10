@@ -16,6 +16,7 @@ public class PieceController : MonoBehaviour
 
     public bool IsFalling => _isFalling;
     private float fallingSpeed;
+
     private void OnEnable()
     {
         fallingSpeed = config.speed;
@@ -54,6 +55,13 @@ public class PieceController : MonoBehaviour
     {
         fallingSpeed = config.fastFallspeed;
     }
+
+    public void HandleLateralForce(Vector2 force)
+    {
+        if (!_isFalling)
+            _rb.AddForce(force, ForceMode2D.Impulse);
+    }
+
     private void HandlePlayerPositionChanged(Vector3 playerPosition)
     {
         transform.position = new Vector3(playerPosition.x, transform.position.y);
