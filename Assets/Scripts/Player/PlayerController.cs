@@ -98,6 +98,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandlePieceLanded()
     {
+        _currentPiece = null;
         SpawnNextPiece();
     }
 
@@ -126,6 +127,9 @@ public class PlayerController : MonoBehaviour
 
     private void DropPiece()
     {
-        throw new NotImplementedException();
+        if (_currentPiece == null)
+            return;
+
+        _currentPiece.GetComponent<PieceController>().FastFall();
     }
 }

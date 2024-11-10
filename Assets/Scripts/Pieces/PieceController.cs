@@ -15,9 +15,10 @@ public class PieceController : MonoBehaviour
     private Rigidbody2D _rb;
 
     public bool IsFalling => _isFalling;
-
+    private float fallingSpeed;
     private void OnEnable()
     {
+        fallingSpeed = config.speed;
         transform.rotation = quaternion.identity;
         _rb = GetComponent<Rigidbody2D>();
         _rb.gravityScale = 0;
@@ -37,7 +38,7 @@ public class PieceController : MonoBehaviour
     {
         if (_isFalling)
         {
-            transform.position += Vector3.down * (config.speed * Time.deltaTime);
+            transform.position += Vector3.down * (fallingSpeed * Time.deltaTime);
         }
 
         if (transform.position.y < lowestLimit)
@@ -49,6 +50,10 @@ public class PieceController : MonoBehaviour
         }
     }
 
+    public void FastFall()
+    {
+        fallingSpeed = config.fastFallspeed;
+    }
     private void HandlePlayerPositionChanged(Vector3 playerPosition)
     {
         transform.position = new Vector3(playerPosition.x, transform.position.y);

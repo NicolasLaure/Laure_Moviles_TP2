@@ -4,4 +4,5 @@ using UnityEngine;
 public class PieceConfigSO : ScriptableObject
 {
     public float speed;
+    public float fastFallspeed;
 }
