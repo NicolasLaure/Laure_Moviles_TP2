@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,15 +10,17 @@ public class PieceController : MonoBehaviour
     [SerializeField] private Vector3EventChannelSO onPlayerPositionChanged;
     [SerializeField] private VoidEventChannelSO onPieceLanded;
     [SerializeField] private PieceConfigSO config;
+    [SerializeField] private float lowestLimit;
     private bool _isFalling;
-    private Rigidbody2D rb;
+    private Rigidbody2D _rb;
 
     public bool IsFalling => _isFalling;
 
     private void OnEnable()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0;
+        transform.rotation = quaternion.identity;
+        _rb = GetComponent<Rigidbody2D>();
+        _rb.gravityScale = 0;
         _isFalling = true;
 
         onPlayerPositionChanged.onVector3Event += HandlePlayerPositionChanged;
@@ -25,7 +28,7 @@ public class PieceController : MonoBehaviour
 
     private void OnDisable()
     {
-        rb.gravityScale = 1;
+        _rb.gravityScale = 1;
         _isFalling = false;
         onPlayerPositionChanged.onVector3Event -= HandlePlayerPositionChanged;
     }
@@ -33,7 +36,17 @@ public class PieceController : MonoBehaviour
     private void Update()
     {
         if (_isFalling)
+        {
             transform.position += Vector3.down * (config.speed * Time.deltaTime);
+        }
+
+        if (transform.position.y < lowestLimit)
+        {
+            if (_isFalling)
+                onPieceLanded?.RaiseEvent();
+
+            gameObject.SetActive(false);
+        }
     }
 
     private void HandlePlayerPositionChanged(Vector3 playerPosition)
@@ -45,14 +58,10 @@ public class PieceController : MonoBehaviour
     {
         if (_isFalling)
         {
-            enabled = false;
             _isFalling = false;
+            _rb.gravityScale = 1;
+            onPlayerPositionChanged.onVector3Event -= HandlePlayerPositionChanged;
             onPieceLanded?.RaiseEvent();
         }
-    }
-
-    private void OnCollisionExit(Collision other)
-    {
-        _isFalling = true;
     }
 }

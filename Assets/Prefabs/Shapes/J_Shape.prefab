@@ -297,3 +297,4 @@ MonoBehaviour:
   onPlayerPositionChanged: {fileID: 11400000, guid: e451064f6213abe41bbf5009d4f0f986, type: 2}
   onPieceLanded: {fileID: 11400000, guid: 5904ffe45e54e894abe4b9f1a50ad2da, type: 2}
   config: {fileID: 11400000, guid: a347d41731b24ca4f9a64f4ea0324167, type: 2}
+  lowestLimit: -3
