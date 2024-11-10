@@ -1,39 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.Diagnostics;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 public class InputReader : MonoBehaviour
 {
-    [SerializeField] private Vector3EventChannelSO onMove;
-    [SerializeField] private Vector3EventChannelSO onTouch;
-    [SerializeField] private VoidEventChannelSO onRelease;
+    [SerializeField] private Vec2FloatEvent onTouch;
+    [SerializeField] private Vec2FloatEvent onRelease;
 
     private PlayerInputActions _input;
 
-    void Start()
+    void Awake()
     {
         _input = new PlayerInputActions();
+    }
+
+    private void OnEnable()
+    {
         _input.Enable();
-
-        _input.Player.Move.performed += HandleMove;
-        _input.Player.Tap.started += HandleTouch;
-        _input.Player.Touch.canceled += HandleRelease;
+        _input.Player.PrimaryContact.started += ctx => StartTouchPrimary(ctx);
+        _input.Player.PrimaryContact.canceled += ctx => EndTouchPrimary(ctx);
     }
 
-    public void HandleMove(InputAction.CallbackContext context)
+    private void OnDisable()
     {
-        onMove?.RaiseEvent(context.ReadValue<Vector2>());
+        _input.Disable();
     }
 
-    public void HandleTouch(InputAction.CallbackContext context)
+    private void StartTouchPrimary(InputAction.CallbackContext context)
     {
-        onTouch?.RaiseEvent(context.ReadValue<Vector2>());
+        onTouch?.RaiseEvent(Utils.Utils.ScreenToWorld(Camera.main, _input.Player.PrimaryPosition.ReadValue<Vector2>()), (float)context.startTime);
     }
 
-    public void HandleRelease(InputAction.CallbackContext context)
+    private void EndTouchPrimary(InputAction.CallbackContext context)
     {
-        onRelease?.RaiseEvent();
+        onRelease?.RaiseEvent(Utils.Utils.ScreenToWorld(Camera.main, _input.Player.PrimaryPosition.ReadValue<Vector2>()), (float)context.time);
+    }
+
+    public Vector2 PrimaryPosition()
+    {
+        return _input.Player.PrimaryPosition.ReadValue<Vector2>();
     }
 }

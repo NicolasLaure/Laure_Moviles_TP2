@@ -6,13 +6,14 @@ using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Vector3EventChannelSO onMoveChannel;
+    [SerializeField] private Vector2ChannelEvent onSwipe;
     [SerializeField] private Vector3EventChannelSO onPlayerPositionChanged;
     [SerializeField] private VoidEventChannelSO onRelease;
     [SerializeField] private VoidEventChannelSO onPieceLanded;
     [SerializeField] private Vector2 minMaxHorizontalBounds;
     [SerializeField] private float lateralDisplacement;
     [SerializeField] private float moveCoolDown;
+    [SerializeField] private float maxHorizontalAngle;
     private Vector2 _dir;
 
     private Coroutine _spawnCoroutine;
@@ -22,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        onMoveChannel.onVector3Event += HandleMove;
+        onSwipe.onVector2Event += HandleSwipe;
         onPieceLanded.onVoidEvent += HandlePieceLanded;
         onRelease.onVoidEvent += HandleRelease;
         SpawnNextPiece();
@@ -30,12 +31,27 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        onMoveChannel.onVector3Event -= HandleMove;
+        onSwipe.onVector2Event -= HandleSwipe;
         onPieceLanded.onVoidEvent -= HandlePieceLanded;
         onRelease.onVoidEvent -= HandleRelease;
     }
 
-    private void HandleMove(Vector3 inputDir)
+    private void HandleSwipe(Vector2 swipeDir)
+    {
+        if (swipeDir.x < -Mathf.Cos(maxHorizontalAngle * Mathf.Deg2Rad) || swipeDir.x > Mathf.Cos(maxHorizontalAngle * Mathf.Deg2Rad))
+        {
+            HandleMove(new Vector2(swipeDir.x > 0 ? 1 : -1, 0));
+        }
+        else
+        {
+            if (swipeDir.y > 0)
+                RotateCurrentPieceLeft();
+            else
+                DropPiece();
+        }
+    }
+
+    private void HandleMove(Vector2 inputDir)
     {
         _dir = inputDir;
         Move(_dir.x);
@@ -43,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleRelease()
     {
-        _dir = Vector3.zero;
+        _dir = Vector2.zero;
     }
 
     private IEnumerator SpawnPieceCoroutine()
@@ -108,5 +124,10 @@ public class PlayerController : MonoBehaviour
             return;
 
         _currentPiece.transform.rotation *= Quaternion.Euler(0, 0, 90);
+    }
+
+    private void DropPiece()
+    {
+        throw new NotImplementedException();
     }
 }
