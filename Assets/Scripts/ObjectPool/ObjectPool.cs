@@ -1,6 +1,6 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace ObjectPool
 {
@@ -24,11 +24,11 @@ namespace ObjectPool
                 if (configObjectIndex >= poolConfig.poolObjects.Count)
                     configObjectIndex = 0;
 
-                GameObject instantiatedObject = GameObject.Instantiate(poolConfig.poolObjects[configObjectIndex].prefab);
-                
+                GameObject instantiatedObject = Instantiate(poolConfig.poolObjects[configObjectIndex].prefab);
+
                 if (spawningParent != null)
                     instantiatedObject.transform.parent = spawningParent;
-                
+
                 instantiatedObject.SetActive(false);
                 _objects.Add(instantiatedObject);
                 configObjectIndex++;
@@ -49,6 +49,27 @@ namespace ObjectPool
             }
 
             return false;
+        }
+
+        public GameObject GetRandomPooledObject()
+        {
+            int randomIndex = 0;
+            List<int> checkedIndices = new List<int>();
+
+            while (checkedIndices.Count < _objects.Count)
+            {
+                randomIndex = Random.Range(0, _objects.Count);
+                if (!_objects[randomIndex].activeInHierarchy)
+                {
+                    _objects[randomIndex].SetActive(true);   
+                    return _objects[randomIndex];
+                }
+
+                if (!checkedIndices.Contains(randomIndex))
+                    checkedIndices.Add(randomIndex);
+            }
+
+            return null;
         }
 
         public bool TryReturnObject(GameObject objectToDisable)

@@ -65,12 +65,10 @@ public class PlayerController : MonoBehaviour
     private IEnumerator SpawnPieceCoroutine()
     {
         yield return null;
-        if (PiecesPool.instance.TryGetPooledObject(out GameObject piece))
-        {
-            piece.transform.position = transform.position;
-            piece.GetComponent<PieceController>().enabled = true;
-            _currentPiece = piece;
-        }
+        GameObject piece = PiecesPool.instance.GetRandomPooledObject();
+        piece.transform.position = transform.position;
+        piece.GetComponent<PieceController>().enabled = true;
+        _currentPiece = piece;
     }
 
     public void Move(float horizontalDir)
