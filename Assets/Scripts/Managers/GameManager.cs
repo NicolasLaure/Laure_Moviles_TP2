@@ -19,4 +19,9 @@ public class GameManager : MonoBehaviour
     {
         Loader.ChangeScene(Loader.currentSceneIndex + 1);
     }
+
+    public void ReturnToMenu()
+    {
+        Loader.ChangeScene(1);
+    }
 }
