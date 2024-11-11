@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class LoggerManager : MonoBehaviour
 {
+    public static LoggerManager instance;
     public TextMeshProUGUI label;
 
     private const string pluginClassName = "com.laure.loggerplugin.LaureLogger";
@@ -13,6 +12,18 @@ public class LoggerManager : MonoBehaviour
     private AndroidJavaClass pluginClass;
     private AndroidJavaObject pluginInstance;
 #endif
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+    }
+
     void Start()
     {
         label.text = "Start";

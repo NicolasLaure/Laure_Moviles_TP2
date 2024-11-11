@@ -21,13 +21,16 @@ public class LateralDisplacementManager : MonoBehaviour
     private void Update()
     {
         Move();
+    }
+
+    private void FixedUpdate()
+    {
         TryPushObject();
     }
 
     private void LateUpdate()
     {
-        float zAngle = gyro.Rotation.eulerAngles.z;
-        UpdateLateralForce(playerLateralForce * Mathf.Sin(zAngle * Mathf.Deg2Rad));
+        UpdateLateralForce(playerLateralForce * Mathf.Sin(gyro.ZRotation * Mathf.Deg2Rad));
     }
 
     private void Move()

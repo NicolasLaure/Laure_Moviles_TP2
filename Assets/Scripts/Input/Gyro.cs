@@ -6,11 +6,11 @@ using UnityEngine;
 public class Gyro : MonoBehaviour
 {
     private Gyroscope _gyroscope;
-    private Quaternion _phoneRotation;
-    private Quaternion calibratedRotation;
+    private float zAxisRotation;
+    private float zAxisCalibrationRotation;
     private bool _isActive;
 
-    public Quaternion Rotation => calibratedRotation;
+    public float ZRotation => zAxisRotation;
 
     public void EnableGyro()
     {
@@ -21,19 +21,30 @@ public class Gyro : MonoBehaviour
         {
             _gyroscope = Input.gyro;
             _gyroscope.enabled = true;
+            _isActive = true;
         }
+    }
 
-        _isActive = true;
+    private void Start()
+    {
+        EnableGyro();
     }
 
     private void Update()
     {
         if (_isActive)
-            _phoneRotation = calibratedRotation * Quaternion.Inverse(_gyroscope.attitude);
+        {
+            zAxisRotation = zAxisCalibrationRotation - _gyroscope.attitude.eulerAngles.z;
+        }
+    }
+
+    public float GetZAxisAngle()
+    {
+        return _gyroscope.rotationRateUnbiased.z;
     }
 
     public void Calibrate()
     {
-        calibratedRotation = _gyroscope.attitude;
+        zAxisCalibrationRotation = _gyroscope.attitude.eulerAngles.z;
     }
 }
