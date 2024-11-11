@@ -24,4 +24,11 @@ public class GameManager : MonoBehaviour
     {
         Loader.ChangeScene(1);
     }
+
+    public void StartLevel(int levelNumber)
+    {
+        // Index 0 is splashScreen 1 is MainMenu
+        int previousIndices = 1;
+        Loader.ChangeScene(previousIndices + levelNumber);
+    }
 }
