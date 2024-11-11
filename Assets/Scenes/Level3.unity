@@ -504,9 +504,9 @@ MonoBehaviour:
   upperLimit: 6
   horizontalOffset: 4
   verticalSpeed: 75
-  windForce: -1.5
+  windForce: 3
   gyro: {fileID: 279860780}
-  playerLateralForce: 3
+  playerLateralForce: 5
 --- !u!1 &202851087
 GameObject:
   m_ObjectHideFlags: 0
@@ -7362,13 +7362,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114874544}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5015937, y: 0.4984012, z: -0.49840125, w: -0.5015937}
-  m_LocalPosition: {x: 4.15, y: 4.5, z: 0}
+  m_LocalRotation: {x: 0.4984006, y: 0.50159436, z: 0.50159436, w: 0.4984006}
+  m_LocalPosition: {x: -3.59, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 194855189}
-  m_LocalEulerAnglesHint: {x: 180.366, y: 90, z: -90}
+  m_LocalEulerAnglesHint: {x: 180.366, y: -90, z: -90}
 --- !u!1 &1277495771
 GameObject:
   m_ObjectHideFlags: 0

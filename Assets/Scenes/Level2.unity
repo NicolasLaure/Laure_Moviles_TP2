@@ -420,9 +420,9 @@ MonoBehaviour:
   upperLimit: 6
   horizontalOffset: 4
   verticalSpeed: 75
-  windForce: -1.5
+  windForce: -2.5
   gyro: {fileID: 279860780}
-  playerLateralForce: 3
+  playerLateralForce: 5
 --- !u!1 &202851087
 GameObject:
   m_ObjectHideFlags: 0
