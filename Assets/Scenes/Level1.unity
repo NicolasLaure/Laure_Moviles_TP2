@@ -6722,6 +6722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onLevelFinished: {fileID: 11400000, guid: f708565ac267aef44b046a45d8017ec3, type: 2}
+  levelNumber: 1
 --- !u!4 &1655359944
 Transform:
   m_ObjectHideFlags: 0

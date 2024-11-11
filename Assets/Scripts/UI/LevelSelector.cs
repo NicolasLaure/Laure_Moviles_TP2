@@ -13,6 +13,7 @@ public class LevelSelector : MonoBehaviour
 
     void OnEnable()
     {
+        maxUnlockedLevel = PlayerPrefs.GetInt("MaxLevel", 1);
         TurnOFFLockedLevels();
     }
 

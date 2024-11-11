@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private VoidEventChannelSO onLevelFinished;
+    [SerializeField] private int levelNumber;
 
     private void OnEnable()
     {
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleLevelFinished()
     {
+        PlayerPrefs.SetInt("MaxLevel", levelNumber + 1);
         Loader.ChangeScene(Loader.currentSceneIndex + 1);
     }
 
