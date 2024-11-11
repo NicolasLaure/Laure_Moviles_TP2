@@ -22,6 +22,7 @@ public class Gyro : MonoBehaviour
             _gyroscope = Input.gyro;
             _gyroscope.enabled = true;
             _isActive = true;
+            Calibrate();
         }
     }
 
