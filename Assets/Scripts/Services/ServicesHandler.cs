@@ -15,8 +15,6 @@ public class ServicesHandler : MonoBehaviour
 
     internal void ProcessAuthentication(bool succeded)
     {
-        
-        Loader.ChangeScene(Loader.currentSceneIndex + 1);
     }
 #endif
 }
