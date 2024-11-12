@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a414a12dbd398d241abe3bfea9aa53a2, type: 3}
-  m_Name: OnFinishLineTouch
+  m_Script: {fileID: 11500000, guid: 7d4544461cab525428401a4a3783f5be, type: 3}
+  m_Name: OnLevelWin
   m_EditorClassIdentifier: 

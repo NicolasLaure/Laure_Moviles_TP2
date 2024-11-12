@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3EventChannelSO onPlayerPositionChanged;
     [SerializeField] private VoidEventChannelSO onRelease;
     [SerializeField] private VoidEventChannelSO onPieceLanded;
+    [SerializeField] private BoolEventChannelSO onFinishLineTouch;
     [SerializeField] private Vector2 minMaxHorizontalBounds;
     [SerializeField] private float lateralDisplacement;
     [SerializeField] private float moveCoolDown;
@@ -20,12 +21,15 @@ public class PlayerController : MonoBehaviour
     private GameObject _currentPiece;
     private Coroutine _moveCoolDownCoroutine;
     private bool _canMove = true;
+    private bool _canSpawn = true;
 
     void Start()
     {
+        _canSpawn = true;
         onSwipe.onVector2Event += HandleSwipe;
         onPieceLanded.onVoidEvent += HandlePieceLanded;
         onRelease.onVoidEvent += HandleRelease;
+        onFinishLineTouch.onBoolEvent += SetCanSpawn;
         SpawnNextPiece();
     }
 
@@ -34,6 +38,7 @@ public class PlayerController : MonoBehaviour
         onSwipe.onVector2Event -= HandleSwipe;
         onPieceLanded.onVoidEvent -= HandlePieceLanded;
         onRelease.onVoidEvent -= HandleRelease;
+        onFinishLineTouch.onBoolEvent -= SetCanSpawn;
     }
 
     private void HandleSwipe(Vector2 swipeDir)
@@ -104,6 +109,9 @@ public class PlayerController : MonoBehaviour
 
     private void SpawnNextPiece()
     {
+        if (!_canSpawn)
+            return;
+
         if (_spawnCoroutine != null)
             StopCoroutine(_spawnCoroutine);
         _spawnCoroutine = StartCoroutine(SpawnPieceCoroutine());
@@ -131,5 +139,12 @@ public class PlayerController : MonoBehaviour
             return;
 
         _currentPiece.GetComponent<PieceController>().FastFall();
+    }
+
+    private void SetCanSpawn(bool value)
+    {
+        _canSpawn = !value;
+        if (_canSpawn)
+            SpawnNextPiece();
     }
 }

@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e1c9256a1ce08843aef909ae35bf66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onFinishLineTouch: {fileID: 11400000, guid: f708565ac267aef44b046a45d8017ec3, type: 2}
-  contactTimeToWin: 0
+  onLevelWin: {fileID: 11400000, guid: f708565ac267aef44b046a45d8017ec3, type: 2}
+  onTouch: {fileID: 11400000, guid: 7e2732717b09bd34aa73254269ea431c, type: 2}
+  contactTimeToWin: 3
   touchDuration: 0
+  TimerText: {fileID: 0}
