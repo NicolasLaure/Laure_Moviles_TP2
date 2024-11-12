@@ -12,6 +12,13 @@ Through the correct stacking of tetrominoes, the player is able to achieve the o
 + Cliff Power Up
 + Logger with a native plugin 
 
+## Implemented Patterns
++ Adapter
++ Memento
++ Object Pool
++ Observer
++ Singleton
+
 ## Controls
 
 ### Swipes:
