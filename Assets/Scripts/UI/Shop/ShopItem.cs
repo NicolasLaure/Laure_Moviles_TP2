@@ -11,7 +11,7 @@ public class ShopItem : MonoBehaviour
     [SerializeField] protected Color defaultColor;
     [SerializeField] protected Color lockedColor;
     [SerializeField] protected int price;
-
+    [SerializeField] protected IntEventChannelSO onCoinsRemove;
     protected int _currentCoins;
 
     private void OnEnable()
@@ -32,6 +32,8 @@ public class ShopItem : MonoBehaviour
 
     public virtual void Buy()
     {
-        CoinsHandler.RemoveCoins(price);
+        onCoinsRemove.RaiseEvent(price);
+        if (CoinsHandler.GetCurrentCoins() < price)
+            LockButton();
     }
 }

@@ -8,7 +8,6 @@ namespace ObjectPool
     {
         [SerializeField] private Transform spawningParent;
         [SerializeField] protected PoolConfigSO poolConfig;
-        [SerializeField] private VoidEventChannelSO onBagDespawnedEvent;
 
         private List<GameObject> _objects;
 
@@ -81,7 +80,6 @@ namespace ObjectPool
                     if (_object == objectToDisable)
                     {
                         _object.SetActive(false);
-                        onBagDespawnedEvent.RaiseEvent();
                         return true;
                     }
                 }

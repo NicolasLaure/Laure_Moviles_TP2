@@ -717,6 +717,7 @@ MonoBehaviour:
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   lockedColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
   price: 10
+  onCoinsRemove: {fileID: 11400000, guid: f050c88055e72fd409c845715b3789ca, type: 2}
 --- !u!114 &5371620612932427734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +761,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6752990207412939260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4981451744914354066}
+        m_TargetAssemblyTypeName: FloorPowerUp, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5963033148092821033
 GameObject:
   m_ObjectHideFlags: 0

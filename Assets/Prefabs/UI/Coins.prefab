@@ -338,3 +338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinsText: {fileID: 2623391052245489584}
+  onCoinsUpdated: {fileID: 11400000, guid: 3d9011aff44a0b841ba7db795b8e2fe9, type: 2}
+  onCoinsAdd: {fileID: 11400000, guid: d251919b4aaf3314c8c254b75d7c9797, type: 2}
+  onCoinsRemove: {fileID: 11400000, guid: f050c88055e72fd409c845715b3789ca, type: 2}
