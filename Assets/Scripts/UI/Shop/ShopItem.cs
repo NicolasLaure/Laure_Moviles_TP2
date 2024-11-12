@@ -24,7 +24,7 @@ public class ShopItem : MonoBehaviour
         }
     }
 
-    private void LockButton()
+    protected void LockButton()
     {
         buyButton.enabled = false;
         buttonImage.color = lockedColor;
