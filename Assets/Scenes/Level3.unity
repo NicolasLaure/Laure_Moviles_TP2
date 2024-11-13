@@ -6940,6 +6940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onLevelFinished: {fileID: 11400000, guid: f708565ac267aef44b046a45d8017ec3, type: 2}
   levelNumber: 3
+  nextSceneIndex: 5
   levelCompleted: {fileID: 11400000, guid: c7b8908c29c7149419db8742028934d2, type: 2}
 --- !u!4 &1655359944
 Transform:
