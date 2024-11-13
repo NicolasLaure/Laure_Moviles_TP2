@@ -24,7 +24,12 @@
 
 public static class GPGSIds
 {
-        public const string achievement_test_01 = "CgkI7MCk-LgHEAIQAQ"; // <GPGSID>
+        public const string achievement_landed = "CgkI7MCk-LgHEAIQAg"; // <GPGSID>
+        public const string achievement_power = "CgkI7MCk-LgHEAIQBg"; // <GPGSID>
+        public const string achievement_level_1 = "CgkI7MCk-LgHEAIQAw"; // <GPGSID>
+        public const string achievement_level_2 = "CgkI7MCk-LgHEAIQBA"; // <GPGSID>
+        public const string achievement_level_3 = "CgkI7MCk-LgHEAIQBQ"; // <GPGSID>
+        public const string achievement_golden_boy = "CgkI7MCk-LgHEAIQBw"; // <GPGSID>
 
 }
 

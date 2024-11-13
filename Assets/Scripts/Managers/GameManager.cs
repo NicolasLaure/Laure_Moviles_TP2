@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private VoidEventChannelSO onLevelFinished;
     [SerializeField] private int levelNumber;
+    [SerializeField] private AchievementSO levelCompleted;
 
     private void OnEnable()
     {
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     private void HandleLevelFinished()
     {
         PlayerPrefs.SetInt("MaxLevel", levelNumber + 1);
+        AchievementsManager.UnlockAchievement(levelCompleted);
         Loader.ChangeScene(Loader.currentSceneIndex + 1);
     }
 

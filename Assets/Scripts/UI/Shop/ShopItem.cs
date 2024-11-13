@@ -12,6 +12,7 @@ public class ShopItem : MonoBehaviour
     [SerializeField] protected Color lockedColor;
     [SerializeField] protected int price;
     [SerializeField] protected IntEventChannelSO onCoinsRemove;
+    [SerializeField] protected VoidEventChannelSO onPurchase;
     protected int _currentCoins;
 
     private void OnEnable()

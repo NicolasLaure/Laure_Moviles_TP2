@@ -730,6 +730,53 @@ Transform:
   - {fileID: 938285230}
   m_Father: {fileID: 1277495772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &400771229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400771231}
+  - component: {fileID: 400771230}
+  m_Layer: 0
+  m_Name: FirstPowerUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &400771230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400771229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe834978fa668e9478e3ea86d26bbdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTrigger: {fileID: 11400000, guid: c266194603b703947b764d81bf4fdda9, type: 2}
+  achievement: {fileID: 11400000, guid: 9d65629f0ea80a4478186831dd5a5975, type: 2}
+  id: FirstPowerUp
+--- !u!4 &400771231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400771229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &426344664
 GameObject:
   m_ObjectHideFlags: 0
@@ -6656,6 +6703,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1550474019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1550474021}
+  - component: {fileID: 1550474020}
+  m_Layer: 0
+  m_Name: FirstCoin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1550474020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550474019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe834978fa668e9478e3ea86d26bbdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTrigger: {fileID: 11400000, guid: 147a70485d1de0249a6c9c1f00962eb6, type: 2}
+  achievement: {fileID: 11400000, guid: 88e1a84afd6e35b4090bd4b581307faa, type: 2}
+  id: FirstCoin
+--- !u!4 &1550474021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550474019}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1587812038
 GameObject:
   m_ObjectHideFlags: 0
@@ -6741,6 +6835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onLevelFinished: {fileID: 11400000, guid: f708565ac267aef44b046a45d8017ec3, type: 2}
   levelNumber: 2
+  levelCompleted: {fileID: 11400000, guid: 08e9a01aaf8934449a5acf57363af621, type: 2}
 --- !u!4 &1655359944
 Transform:
   m_ObjectHideFlags: 0
@@ -7465,3 +7560,5 @@ SceneRoots:
   - {fileID: 325801785}
   - {fileID: 1892248910}
   - {fileID: 213522963}
+  - {fileID: 1550474021}
+  - {fileID: 400771231}

@@ -3,11 +3,6 @@ using UnityEngine;
 using GooglePlayGames;
 #endif
 
-public enum Achievements
-{
-    TEST_01
-}
-
 public class AchievementsManager : MonoBehaviour
 {
     public static void UnlockAchievement(AchievementSO achievement)

@@ -4,6 +4,7 @@ public class Coin : MonoBehaviour
 {
     [SerializeField] private int value;
     [SerializeField] private IntEventChannelSO onCoinsAdd;
+    [SerializeField] private VoidEventChannelSO onCoinsPicked;
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -11,6 +12,7 @@ public class Coin : MonoBehaviour
             return;
 
         onCoinsAdd.RaiseEvent(value);
+        onCoinsPicked.RaiseEvent();
         gameObject.SetActive(false);
     }
 }

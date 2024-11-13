@@ -718,6 +718,7 @@ MonoBehaviour:
   lockedColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
   price: 10
   onCoinsRemove: {fileID: 11400000, guid: f050c88055e72fd409c845715b3789ca, type: 2}
+  onPurchase: {fileID: 11400000, guid: c266194603b703947b764d81bf4fdda9, type: 2}
   pillar: {fileID: 0}
 --- !u!114 &5371620612932427734
 MonoBehaviour:
