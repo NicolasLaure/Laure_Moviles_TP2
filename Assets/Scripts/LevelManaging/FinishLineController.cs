@@ -27,10 +27,7 @@ public class FinishLineController : MonoBehaviour
         touchDuration += Time.deltaTime;
         HandleTimer();
         if (touchDuration >= contactTimeToWin)
-        {
             onLevelWin?.RaiseEvent();
-            Time.timeScale = 1;
-        }
 
         TimerText.gameObject.SetActive(true);
     }
@@ -45,7 +42,6 @@ public class FinishLineController : MonoBehaviour
 
         _waitCoroutine = StartCoroutine(ResetPlayerSpawn());
         touchDuration = 0;
-        Time.timeScale = 1;
         TimerText.gameObject.SetActive(false);
     }
 
@@ -60,7 +56,6 @@ public class FinishLineController : MonoBehaviour
         int timer = (int)(contactTimeToWin - touchDuration);
         TimerText.text = timer.ToString();
 
-        Time.timeScale = Mathf.Clamp(1f - touchDuration / contactTimeToWin, 0.5f, 1);
         if (!TimerText.gameObject.activeInHierarchy)
             TimerText.gameObject.SetActive(true);
     }
